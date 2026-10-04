@@ -1,0 +1,16 @@
+{
+  "zero_lines": [
+    98,
+    99
+  ],
+  "zero_branches": [
+    [
+      53,
+      "0",
+      "5",
+      "0"
+    ]
+  ],
+  "classification": 3,
+  "reason": "Takeoff.cpp switch default defensive fallback for an invalid TakeoffState. Public transitions only assign valid enum states. Reaching this default would require private-state corruption, excluded by the assignment."
+}

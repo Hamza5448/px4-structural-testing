@@ -1,0 +1,41 @@
+{
+  "input": "/home/hamzaahmad/PX4-Autopilot/coverage/takeoff-production-student-verified-final.info",
+  "whole": {
+    "lines_total": 42,
+    "lines_hit": 40,
+    "line_percent": 95.23809523809524,
+    "branches_total": 30,
+    "branches_numeric": 30,
+    "branches_dash": 0,
+    "branches_hit": 29,
+    "branch_percent": 96.66666666666667,
+    "numeric_only_branch_percent": 96.66666666666667,
+    "zero_lines": [
+      98,
+      99
+    ],
+    "zero_branches": [
+      [
+        53,
+        "0",
+        "5",
+        "0"
+      ]
+    ]
+  },
+  "selected": {
+    "lines_total": 0,
+    "lines_hit": 0,
+    "line_percent": null,
+    "branches_total": 0,
+    "branches_numeric": 0,
+    "branches_dash": 0,
+    "branches_hit": 0,
+    "branch_percent": null,
+    "numeric_only_branch_percent": null,
+    "zero_lines": [],
+    "zero_branches": []
+  },
+  "functions_total": 3,
+  "functions_hit": 3
+}

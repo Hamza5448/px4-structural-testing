@@ -1,0 +1,34 @@
+{
+  "validated_at_utc": "2026-10-04T17:53:50.055104+00:00",
+  "baseline_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "baseline_clean_before_and_after": true,
+  "git_apply_check_exit_code": 0,
+  "patch_paths": [
+    "src/modules/commander/failsafe/CMakeLists.txt",
+    "src/modules/commander/failsafe/FailsafeStructuralTest.cpp",
+    "src/modules/mc_pos_control/Takeoff/CMakeLists.txt",
+    "src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp"
+  ],
+  "production_diff_empty": true,
+  "production_bytes_equal_exact_baseline": true,
+  "ekf_reference_csv_diff_empty": true,
+  "student_test_counts": {
+    "FailsafeStructuralTest.cpp": 13,
+    "TakeoffStructuralTest.cpp": 5
+  },
+  "full_regression": {
+    "command": "make tests",
+    "ctest_total": 149,
+    "ctest_passed": 149,
+    "ctest_failed": 0,
+    "test_time_seconds": 636.67,
+    "exit_code": 0,
+    "log": "coverage/full-make-tests-final.log",
+    "regression_generated_csv_files_restored_to_clean_pre_run_contents": [
+      "src/modules/ekf2/test/change_indication/ekf_gsf_reset.csv",
+      "src/modules/ekf2/test/change_indication/iris_gps.csv"
+    ]
+  },
+  "html_indexes_present": true,
+  "tests_rerun_during_documentation": false
+}

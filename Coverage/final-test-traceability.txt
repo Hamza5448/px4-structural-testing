@@ -1,0 +1,131 @@
+Actual student GoogleTest traceability
+Baseline commit: d6f12ad1c4f70ad3230afd7d86e971421e02fef4
+No scenario-level test IDs invented. Each entry below is one actual TEST or TEST_F.
+
+FailsafeStructuralTest.FS_MCDC_01_DisabledManualControl
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): A=T B=F C=T M=T; RC input disabled, finished mission, GCS lost.
+Production target: checkStateAndMode mission-control-loss Q.
+Expected action/result: Hold during configured delay, then RTL.
+Structural coverage target: A independence pair 01/02; Q true.
+
+FailsafeStructuralTest.FS_MCDC_02_NoManualControlException
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): A=F B=F C=T M=T; RC enabled without mission exception.
+Production target: checkStateAndMode mission-control-loss Q.
+Expected action/result: None.
+Structural coverage target: A pair 01/02 and B pair 02/03; Q false.
+
+FailsafeStructuralTest.FS_MCDC_03_MissionManualControlException
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): A=F B=T C=T M=T; mission RC exception.
+Production target: checkStateAndMode mission-control-loss Q.
+Expected action/result: Hold during configured delay, then RTL.
+Structural coverage target: B pair 02/03, C pair 03/04, M pair 03/05; Q true.
+
+FailsafeStructuralTest.FS_MCDC_04_EnabledDatalinkHold
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): A=F B=T C=F M=T; NAV_DLL_ACT=1 (Hold).
+Production target: checkStateAndMode Q false plus ordinary GCS-loss Hold policy.
+Expected action/result: Hold, distinct from row 03 settled RTL.
+Structural coverage target: C independence pair 03/04; ordinary path remains active but distinguishable.
+
+FailsafeStructuralTest.FS_MCDC_05_UnfinishedMission
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): A=F B=T C=T M=F; unfinished mission.
+Production target: checkStateAndMode mission-control-loss Q.
+Expected action/result: None.
+Structural coverage target: M independence pair 03/05; Q false.
+
+FailsafeSafetyScenarioTest.ManualAndGcsLossPolicies
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Healthy arming, then isolated manual control loss; separate ordinary GCS loss.
+Production target: checkStateAndMode RC/GCS policy gates; fromNavDllOrRclActParam.
+Expected action/result: RC configured Land; GCS configured RTL.
+Structural coverage target: Positive loss paths with exceptions disabled; independent Return policy preserved.
+
+FailsafeSafetyScenarioTest.QuadchuteAndModeDependentNavigation
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Quadchute in loiter/takeoff; low position accuracy in loiter; navigator failure in RTL/loiter.
+Production target: checkStateAndMode quadchute, low-accuracy, navigator-mode predicates.
+Expected action/result: Quadchute RTL; accuracy Hold; navigator Land in RTL and Hold in loiter.
+Structural coverage target: Alternative mode gates and mode-dependent Land/Hold actions.
+
+FailsafeSafetyScenarioTest.BatteryEscalationAndArmingBaseline
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Healthy arming followed by LOW, CRITICAL, EMERGENCY; separate CRITICAL at arming.
+Production target: updateArmingState baseline; checkStateAndMode warning comparison/switch; fromBatteryWarningActParam.
+Expected action/result: Warn, RTL, Land for escalation; Warn at low-battery arming.
+Structural coverage target: All three battery switch cases and both warning_worse_than_at_arming outcomes.
+
+FailsafeSafetyScenarioTest.CriticalFailureTimingAndCircuitBreaker
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Healthy arming, failure after spoolup/lockdown; failure clear; early failure; breaker enabled.
+Production target: checkStateAndMode critical failure timing/circuit-breaker policies.
+Expected action/result: Post-takeoff Terminate latched; early Disarm; breaker-enabled Warn.
+Structural coverage target: Early versus late time gates and enabled/disabled termination breaker.
+
+FailsafeSafetyScenarioTest.SpoolupHealthAndOptionalManualControl
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Disarmed/armed/disarmed lifecycle; ESC and battery failures in spoolup; battery unhealthy later; optional RC lost at arming then regained and lost.
+Production target: updateArmingState; checkStateAndMode arming-time, battery/ESC and RC-optional gates.
+Expected action/result: Healthy lifecycle None; early failures Disarm; late battery Warn; optional RC None, then RTL after regain/loss.
+Structural coverage target: Zero/nonzero armed timestamp, spoolup health paths, optional-control reset.
+
+FailsafeSafetyScenarioTest.IndependentFlightSafetyPolicies
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Fresh real Failsafe per wind, flight-time, geofence, remaining-battery-time, motor, propeller and mission failure.
+Production target: checkStateAndMode corresponding CHECK_FAILSAFE calls and policy conversions.
+Expected action/result: RTL for wind/time/geofence/remaining-time/mission; motor Land; propeller Warn.
+Structural coverage target: Real isolated positive conditions and inFailsafe consistency.
+
+FailsafeSafetyScenarioTest.LinkLossExceptionsAndVtolTransition
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): Both link losses with mission/loiter/offboard/takeoff exceptions; RC external/altitude exceptions; GCS landing suppression; disabled exceptions; fixed-wing and transitioning VTOL takeoff completion.
+Production target: checkStateAndMode RC/DLL exception predicates and forward-flight VTOL suppression.
+Expected action/result: Enabled relevant exceptions None; disabled exceptions RTL; suppression ends at mission completion -> RTL.
+Structural coverage target: Mode/bit alternatives, forward-flight tests, mission_finished suppression gate.
+
+FailsafeSafetyScenarioTest.ExternalModesManualControlException
+Source: src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Scenario(s): EXTERNAL1 through EXTERNAL8, each healthy at arming then manual control lost with ExternalMode bit enabled and disabled.
+Production target: checkStateAndMode external-mode OR predicate; COM_RCL_EXCEPT ExternalMode bit; ordinary RC loss.
+Expected action/result: None with bit enabled; RTL with bit disabled, for every external mode.
+Structural coverage target: All eight external predicates and both external exception-bit outcomes.
+
+TakeoffStructuralTest.SkipTakeoffOverrideAndDisarmReset
+Source: src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+Scenario(s): Skip request while disarmed; armed skip; disarm reset.
+Production target: TakeoffHandling::updateTakeoffState armed/skip override and final disarm reset.
+Expected action/result: Disarmed, flight, disarmed respectively.
+Structural coverage target: Both armed&&skip outcomes and disarm priority.
+
+TakeoffStructuralTest.LandingTransitionsFlightBackToReady
+Source: src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+Scenario(s): Enter flight via skip; remain airborne; land; request new takeoff.
+Production target: TakeoffHandling::updateTakeoffState flight landed gate and ready/ramp transitions.
+Expected action/result: Flight preserved airborne; ready on landing; rampup on new request.
+Structural coverage target: Both landed outcomes and reusable lifecycle transition.
+
+TakeoffStructuralBoundaryTest.RampTimeBoundary
+Source: src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+Scenario(s): Ramp time 2 s; updateRamp dt=1 then independent dt=2 boundary.
+Production target: TakeoffHandling::updateRamp _takeoff_ramp_time > dt and progress <1.
+Expected action/result: 1 m/s incremental limit; 2 m/s on equality completion.
+Structural coverage target: Incremental branch and equality else branch.
+
+TakeoffStructuralBoundaryTest.InitialRampGainLowerBound
+Source: src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+Scenario(s): Generate initial ramp with velocity gains 0.005 and 0.5.
+Production target: TakeoffHandling::generateInitialRampValue math::max gain clamp; updateRamp before rampup.
+Expected action/result: -g/0.01 and -g/0.5 within tolerance.
+Structural coverage target: Below-minimum versus normal gain and pre-ramp initial limit.
+
+TakeoffStructuralLifecycleTest.SpoolupWaitAndNormalRampCompletion
+Source: src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+Scenario(s): Arm at 0, wait 500 ms, ready at 1 s; request ramp; complete 2 s ramp; update state again.
+Production target: TakeoffHandling::updateTakeoffState spoolup hysteresis and ramp progress; updateRamp completion.
+Expected action/result: Spoolup before threshold; ready at equality; rampup then flight.
+Structural coverage target: Spoolup wait break, threshold transition and normal rampup->flight path.
+
+Total actual student GTests: 18 (13 Failsafe, 5 Takeoff).

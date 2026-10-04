@@ -1,0 +1,91 @@
+Internal ctest changing into directory: /tmp/px4-sqe-upstream-build
+UpdateCTestConfiguration  from :/tmp/px4-sqe-upstream-build/DartConfiguration.tcl
+Parse Config file:/tmp/px4-sqe-upstream-build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/tmp/px4-sqe-upstream-build/DartConfiguration.tcl
+Parse Config file:/tmp/px4-sqe-upstream-build/DartConfiguration.tcl
+Test project /tmp/px4-sqe-upstream-build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 74
+    Start  74: functional-failsafe_test
+
+74: Test command: /tmp/px4-sqe-upstream-build/functional-failsafe_test
+74: Working Directory: /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe
+74: Test timeout computed to be: 1500
+74: ERROR [px4_work_queue] not running
+74: ERROR [px4_work_queue] wq:lp_default not available
+74: ERROR [px4_work_queue] init failed
+74: [==========] Running 9 tests from 1 test suite.
+74: [----------] Global test environment set-up.
+74: [----------] 9 tests from FailsafeTest
+74: [ RUN      ] FailsafeTest.general
+74: WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+74: WARN  [failsafe] Failsafe activated	
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.general (0 ms)
+74: [ RUN      ] FailsafeTest.takeover
+74: WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.takeover (0 ms)
+74: [ RUN      ] FailsafeTest.takeover_denied
+74: WARN  [failsafe] Failsafe activated	
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.takeover_denied (0 ms)
+74: [ RUN      ] FailsafeTest.can_takeover_degraded_failsafe
+74: WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+74: WARN  [failsafe] Failsafe activated	
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.can_takeover_degraded_failsafe (0 ms)
+74: [ RUN      ] FailsafeTest.no_immediate_takeover_when_failsafe_on_mode_switch
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.no_immediate_takeover_when_failsafe_on_mode_switch (0 ms)
+74: [ RUN      ] FailsafeTest.defer
+74: WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+74: WARN  [failsafe] Failsafe activated	
+74: WARN  [failsafe] Failsafe activated	
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.defer (0 ms)
+74: [ RUN      ] FailsafeTest.defer_and_clear
+74: [       OK ] FailsafeTest.defer_and_clear (0 ms)
+74: [ RUN      ] FailsafeTest.skip_failsafe
+74: [       OK ] FailsafeTest.skip_failsafe (0 ms)
+74: [ RUN      ] FailsafeTest.user_termination
+74: WARN  [failsafe] Failsafe activated	
+74: [       OK ] FailsafeTest.user_termination (0 ms)
+74: [----------] 9 tests from FailsafeTest (4 ms total)
+74: 
+74: [----------] Global test environment tear-down
+74: [==========] 9 tests from 1 test suite ran. (4 ms total)
+74: [  PASSED  ] 9 tests.
+1/2 Test  #74: functional-failsafe_test .........   Passed    0.05 sec
+test 114
+    Start 114: unit-Takeoff
+
+114: Test command: /tmp/px4-sqe-upstream-build/unit-Takeoff
+114: Working Directory: /tmp/px4-sqe-upstream-build
+114: Test timeout computed to be: 1500
+114: [==========] Running 2 tests from 1 test suite.
+114: [----------] Global test environment set-up.
+114: [----------] 2 tests from TakeoffTest
+114: [ RUN      ] TakeoffTest.Initialization
+114: [       OK ] TakeoffTest.Initialization (0 ms)
+114: [ RUN      ] TakeoffTest.RegularTakeoffRamp
+114: [       OK ] TakeoffTest.RegularTakeoffRamp (0 ms)
+114: [----------] 2 tests from TakeoffTest (0 ms total)
+114: 
+114: [----------] Global test environment tear-down
+114: [==========] 2 tests from 1 test suite ran. (1 ms total)
+114: [  PASSED  ] 2 tests.
+2/2 Test #114: unit-Takeoff .....................   Passed    0.03 sec
+
+The following tests passed:
+	functional-failsafe_test
+	unit-Takeoff
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.10 sec

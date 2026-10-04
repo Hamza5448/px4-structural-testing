@@ -1,0 +1,13 @@
+{
+  "command": "make tests",
+  "ctest_total": 149,
+  "ctest_passed": 149,
+  "ctest_failed": 0,
+  "test_time_seconds": 636.67,
+  "exit_code": 0,
+  "log": "coverage/full-make-tests-final.log",
+  "regression_generated_csv_files_restored_to_clean_pre_run_contents": [
+    "src/modules/ekf2/test/change_indication/ekf_gsf_reset.csv",
+    "src/modules/ekf2/test/change_indication/iris_gps.csv"
+  ]
+}

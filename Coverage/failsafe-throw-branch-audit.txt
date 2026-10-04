@@ -1,0 +1,27 @@
+gcov structural audit: branch kind only. Coverage counts are in the isolated .info files.
+
+Line 494: confirmed gcov (throw) branch; LCOV zero branch 494:e0:1.
+Line 516: confirmed gcov (throw) branch; LCOV zero branch 516:e0:1.
+Line 525: confirmed gcov (throw) branch; LCOV zero branch 525:e0:1.
+Line 530: confirmed gcov (throw) branch; LCOV zero branch 530:e0:1.
+Line 538: confirmed gcov (throw) branch; LCOV zero branch 538:e0:1.
+Line 542: confirmed gcov (throw) branch; LCOV zero branch 542:e0:1.
+Line 544: confirmed gcov (throw) branch; LCOV zero branch 544:e0:1.
+Line 549: confirmed gcov (throw) branch; LCOV zero branch 549:e0:1.
+Line 554: confirmed gcov (throw) branch; LCOV zero branch 554:e0:1.
+Line 558: confirmed gcov (throw) branch; LCOV zero branch 558:e0:1.
+Line 562: confirmed gcov (throw) branch; LCOV zero branch 562:e0:1.
+Line 565: confirmed gcov (throw) branch; LCOV zero branch 565:e0:1.
+Line 571: confirmed gcov (throw) branch; LCOV zero branch 571:e0:1.
+Line 574: confirmed gcov (throw) branch; LCOV zero branch 574:e0:1.
+Line 585: confirmed gcov (throw) branch; LCOV zero branch 585:e0:1.
+Line 591: confirmed gcov (throw) branch; LCOV zero branch 591:e0:1.
+Line 597: confirmed gcov (throw) branch; LCOV zero branch 597:e0:1.
+Line 611: confirmed gcov (throw) branch; LCOV zero branch 611:e0:1.
+Line 614: confirmed gcov (throw) branch; LCOV zero branch 614:e0:1.
+Line 623: confirmed gcov (throw) branch; LCOV zero branch 623:e0:1.
+Line 626: confirmed gcov (throw) branch; LCOV zero branch 626:e0:1.
+Line 629: confirmed gcov (throw) branch; LCOV zero branch 629:e0:1.
+Line 632: confirmed gcov (throw) branch; LCOV zero branch 632:e0:1.
+Line 633: confirmed gcov (throw) branch; LCOV zero branch 633:e0:1.
+Line 639: confirmed gcov (throw) branch; LCOV zero branch 639:e0:1.

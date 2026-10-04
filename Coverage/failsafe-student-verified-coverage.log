@@ -1,0 +1,103 @@
+Deleting all .da files in /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test and subdirectories
+Done.
+Capturing coverage data from /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe
+geninfo cmd: '/usr/bin/geninfo /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe --output-filename /home/hamzaahmad/PX4-Autopilot/coverage/failsafe-student-verified-final.info --gcov-tool gcov --base-directory /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test --ignore-errors mismatch --memory 0 --branch-coverage'
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datGf_3
+Scanning /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe for .gcda files ...
+Found 3 data files in /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe
+Processing /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe/CMakeFiles/functional-FailsafeStructural.dir/FailsafeStructuralTest.cpp.gcda
+geninfo: WARNING: using JSON module "JSON::PP" - which is much slower than some alternatives.  Consider installing one of JSON::XS or Cpanel::JSON::XS
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN60FailsafeStructuralTest_FS_MCDC_01_DisabledManualControl_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:91: 91 -> 95
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN63FailsafeStructuralTest_FS_MCDC_02_NoManualControlException_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:97: 97 -> 101
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN68FailsafeStructuralTest_FS_MCDC_03_MissionManualControlException_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:103: 103 -> 107
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN58FailsafeStructuralTest_FS_MCDC_04_EnabledDatalinkHold_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:109: 109 -> 114
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN56FailsafeStructuralTest_FS_MCDC_05_UnfinishedMission_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:116: 116 -> 120
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN56FailsafeSafetyScenarioTest_ManualAndGcsLossPolicies_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:188: 188 -> 202
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_QuadchuteAndModeDependentNavigation_TestD2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:204: 219 -> 204
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_QuadchuteAndModeDependentNavigation_TestD0Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:204: 219 -> 204
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_QuadchuteAndModeDependentNavigation_TestC2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:204: 219 -> 204
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN66FailsafeSafetyScenarioTest_BatteryEscalationAndArmingBaseline_TestD0Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:221: 241 -> 221
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN66FailsafeSafetyScenarioTest_BatteryEscalationAndArmingBaseline_TestC2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:221: 241 -> 221
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN66FailsafeSafetyScenarioTest_BatteryEscalationAndArmingBaseline_TestD2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:221: 241 -> 221
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN70FailsafeSafetyScenarioTest_CriticalFailureTimingAndCircuitBreaker_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:243: 243 -> 274
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN69FailsafeSafetyScenarioTest_SpoolupHealthAndOptionalManualControl_TestC2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:276: 320 -> 276
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN69FailsafeSafetyScenarioTest_SpoolupHealthAndOptionalManualControl_TestD2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:276: 320 -> 276
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN69FailsafeSafetyScenarioTest_SpoolupHealthAndOptionalManualControl_TestD0Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:276: 320 -> 276
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN63FailsafeSafetyScenarioTest_IndependentFlightSafetyPolicies_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:322: 322 -> 345
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_LinkLossExceptionsAndVtolTransition_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:347: 347 -> 412
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_ExternalModesManualControlException_TestD2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:415: 438 -> 415
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_ExternalModesManualControlException_TestD0Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:415: 438 -> 415
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN67FailsafeSafetyScenarioTest_ExternalModesManualControlException_TestC2Ev at /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp:415: 438 -> 415
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+Processing /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe/CMakeFiles/failsafe.dir/framework.cpp.gcda
+Processing /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/commander/failsafe/CMakeFiles/failsafe.dir/failsafe.cpp.gcda
+Finished .info-file creation
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-message.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-printers.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/events/events_generated.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/uORB/topics/failsafe_flags.h
+Excluding /home/hamzaahmad/PX4-Autopilot/platforms/common/include/px4_platform_common/events.h
+Excluding /home/hamzaahmad/PX4-Autopilot/platforms/common/include/px4_platform_common/log.h
+Excluding /home/hamzaahmad/PX4-Autopilot/platforms/common/include/px4_platform_common/module_params.h
+Excluding /home/hamzaahmad/PX4-Autopilot/platforms/common/include/px4_platform_common/param.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/drivers/drv_hrt.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/include/containers/List.hpp
+Excluding /home/hamzaahmad/PX4-Autopilot/src/lib/circuit_breaker/circuit_breaker.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/lib/parameters/param.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/failsafe.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/framework.cpp
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/commander/failsafe/framework.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/commander/px4_custom_mode.h
+Excluding /usr/include/c++/13/bits/alloc_traits.h
+Excluding /usr/include/c++/13/bits/allocator.h
+Excluding /usr/include/c++/13/bits/basic_string.h
+Excluding /usr/include/c++/13/bits/basic_string.tcc
+Excluding /usr/include/c++/13/bits/char_traits.h
+Excluding /usr/include/c++/13/bits/ios_base.h
+Excluding /usr/include/c++/13/bits/move.h
+Excluding /usr/include/c++/13/bits/new_allocator.h
+Excluding /usr/include/c++/13/bits/stl_algobase.h
+Excluding /usr/include/c++/13/bits/stl_construct.h
+Excluding /usr/include/c++/13/bits/stl_iterator.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_funcs.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_types.h
+Excluding /usr/include/c++/13/bits/stl_uninitialized.h
+Excluding /usr/include/c++/13/bits/stl_vector.h
+Excluding /usr/include/c++/13/bits/unique_ptr.h
+Excluding /usr/include/c++/13/bits/vector.tcc
+Excluding /usr/include/c++/13/initializer_list
+Excluding /usr/include/c++/13/new
+Excluding /usr/include/c++/13/tuple
+Excluding /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
+Removed 42 files
+Writing data to /home/hamzaahmad/PX4-Autopilot/coverage/failsafe-production-student-verified-final.info
+Summary coverage rate:
+  lines......: 60.1% (259 of 431 lines)
+  functions..: 92.9% (13 of 14 functions)
+  branches...: 71.1% (231 of 325 branches)

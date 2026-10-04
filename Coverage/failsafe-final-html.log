@@ -1,0 +1,9 @@
+Found 1 entries.
+Found common filename prefix "/home/hamzaahmad/PX4-Autopilot/src/modules/commander"
+Generating output.
+Processing file failsafe/failsafe.cpp
+  lines=431 hit=259 functions=14 hit=13 branches=325 hit=231
+Overall coverage rate:
+  lines......: 60.1% (259 of 431 lines)
+  functions......: 92.9% (13 of 14 functions)
+  branches......: 71.1% (231 of 325 branches)

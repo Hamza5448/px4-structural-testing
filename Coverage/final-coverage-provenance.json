@@ -1,0 +1,46 @@
+{
+  "baseline_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "baseline_source": "/tmp/px4-sqe-upstream-d6f12ad",
+  "baseline_build": "/tmp/px4-sqe-upstream-build",
+  "student_source": "/home/hamzaahmad/PX4-Autopilot",
+  "student_build": "/home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test",
+  "build_type": "Coverage",
+  "baseline_tests": [
+    "functional-failsafe_test",
+    "unit-Takeoff"
+  ],
+  "student_tests": [
+    "functional-FailsafeStructural",
+    "unit-TakeoffStructural"
+  ],
+  "baseline_status_before_capture": "",
+  "production_sha256": {
+    "src/modules/mc_pos_control/Takeoff/Takeoff.cpp": "1444f131871f31a14e5d568bd71f5f791eb8b7a78e926aa8f04905858f49434b",
+    "src/modules/mc_pos_control/Takeoff/Takeoff.hpp": "4d59f66e8b9344f00a6093ea2699e6607d1b55f84a45104db9d744b9220d525e",
+    "src/modules/commander/failsafe/failsafe.cpp": "e5dd6b8148b308a8cf6346ceb09dad211bfd20efe016a5f7ae2ee5a6c43856cb",
+    "src/modules/commander/failsafe/failsafe.h": "3aa3d070ef79bf78b8b23abb7e12367150fa2a03a03e975878fd9ac29e3fe812",
+    "src/modules/commander/failsafe/framework.cpp": "6f7b9c1a08624c317965f8ae2195dad03f9baf03dc1e4dbb3d08c22a748e96c6",
+    "src/modules/commander/failsafe/framework.h": "36c69534a4c2466e96d2c7fee0b26acdbbf779d90dd589c8efd95f694bc03d18"
+  },
+  "tools": {
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "cmake": "cmake version 3.28.3",
+    "lcov": "lcov: LCOV version 2.0-1"
+  },
+  "baseline_configure_command": "cmake -S /tmp/px4-sqe-upstream-d6f12ad -B /tmp/px4-sqe-upstream-build -G Ninja -DCONFIG=px4_sitl_test -DCMAKE_BUILD_TYPE=Coverage -DFETCHCONTENT_SOURCE_DIR_GOOGLETEST=/home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src -DFETCHCONTENT_SOURCE_DIR_ABSEIL-CPP=/home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/abseil-cpp-src -DFETCHCONTENT_SOURCE_DIR_RE2=/home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/re2-src -DFETCHCONTENT_SOURCE_DIR_ANTLR_CPP=/home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/antlr_cpp-src",
+  "baseline_build_command": "cmake --build /tmp/px4-sqe-upstream-build --target unit-Takeoff functional-failsafe_test --parallel 4",
+  "note": "Dependency source downloads reused; independent baseline object files/executables; no student source or registrations in baseline. Initial zero coverage merged with runtime capture to retain compiled-but-unexecuted real production.",
+  "student_test_sha256": {
+    "src/modules/commander/failsafe/FailsafeStructuralTest.cpp": "408ec55ab3e5dc320647964cb8449fd89f24b7efb5bcbda59019148ff8d7da89",
+    "src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp": "08b691bf24975fe86d36b28602f32e09db623011c4f42628ea098bcff7a20fbc"
+  },
+  "mcdc_settled_actions": [
+    "RTL",
+    "None",
+    "RTL",
+    "Hold",
+    "None"
+  ],
+  "external_mode_scenarios": 16
+}

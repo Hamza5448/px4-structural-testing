@@ -1,0 +1,23 @@
+{
+  "workbook_rows": 18,
+  "failsafe_rows": 13,
+  "takeoff_rows": 5,
+  "inventory_columns": 8,
+  "mcdc_rows": 5,
+  "unique_tests_match_authoritative_traceability": true,
+  "report_embedded_images_preserved": 9,
+  "report_rendered_pages": 14,
+  "mcdc_pairs": {
+    "A": "01/02",
+    "B": "02/03",
+    "C": "03/04",
+    "M": "03/05"
+  },
+  "mcdc_settled_actions": [
+    "RTL",
+    "None",
+    "RTL",
+    "Hold",
+    "None"
+  ]
+}

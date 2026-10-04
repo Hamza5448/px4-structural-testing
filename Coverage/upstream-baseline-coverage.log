@@ -1,0 +1,174 @@
+Deleting all .da files in /tmp/px4-sqe-upstream-build and subdirectories
+Done.
+Capturing coverage data from /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff
+geninfo cmd: '/usr/bin/geninfo /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff --output-filename /home/hamzaahmad/PX4-Autopilot/coverage/upstream-baseline-initial.info --gcov-tool gcov --base-directory /tmp/px4-sqe-upstream-build --ignore-errors mismatch --initial --memory 0 --branch-coverage'
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datQ52g
+Scanning /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe for .gcno files ...
+Found 3 graph files in /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe
+Processing /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe/CMakeFiles/failsafe.dir/framework.cpp.gcno
+geninfo: WARNING: using JSON module "JSON::PP" - which is much slower than some alternatives.  Consider installing one of JSON::XS or Cpanel::JSON::XS
+Processing /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe/CMakeFiles/failsafe.dir/failsafe.cpp.gcno
+Processing /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe/CMakeFiles/functional-failsafe_test.dir/failsafe_test.cpp.gcno
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN25FailsafeTest_general_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:96: 96 -> 151
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN26FailsafeTest_takeover_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:153: 153 -> 208
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_takeover_denied_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:210: 210 -> 260
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN48FailsafeTest_can_takeover_degraded_failsafe_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:262: 262 -> 306
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN68FailsafeTest_no_immediate_takeover_when_failsafe_on_mode_switch_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:308: 308 -> 331
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN23FailsafeTest_defer_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:333: 333 -> 443
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_defer_and_clear_TestD2Ev at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:445: 483 -> 445
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_defer_and_clear_TestD0Ev at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:445: 483 -> 445
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_defer_and_clear_TestC2Ev at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:445: 483 -> 445
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN31FailsafeTest_skip_failsafe_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:485: 485 -> 506
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN34FailsafeTest_user_termination_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:508: 508 -> 531
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+Scanning /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff for .gcno files ...
+Found 2 graph files in /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff
+Processing /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff/CMakeFiles/Takeoff.dir/Takeoff.cpp.gcno
+Processing /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff/CMakeFiles/unit-Takeoff.dir/TakeoffTest.cpp.gcno
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN31TakeoffTest_Initialization_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/TakeoffTest.cpp:39: 39 -> 43
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN35TakeoffTest_RegularTakeoffRamp_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/TakeoffTest.cpp:45: 45 -> 79
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+Finished .info-file creation
+Capturing coverage data from /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff
+geninfo cmd: '/usr/bin/geninfo /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff --output-filename /home/hamzaahmad/PX4-Autopilot/coverage/upstream-baseline-runtime.info --gcov-tool gcov --base-directory /tmp/px4-sqe-upstream-build --ignore-errors mismatch --memory 0 --branch-coverage'
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_dat3uOS
+Scanning /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe for .gcda files ...
+Found 2 data files in /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe
+Processing /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe/CMakeFiles/failsafe.dir/framework.cpp.gcda
+geninfo: WARNING: using JSON module "JSON::PP" - which is much slower than some alternatives.  Consider installing one of JSON::XS or Cpanel::JSON::XS
+Processing /tmp/px4-sqe-upstream-build/src/modules/commander/failsafe/CMakeFiles/functional-failsafe_test.dir/failsafe_test.cpp.gcda
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN25FailsafeTest_general_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:96: 96 -> 151
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN26FailsafeTest_takeover_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:153: 153 -> 208
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_takeover_denied_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:210: 210 -> 260
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN48FailsafeTest_can_takeover_degraded_failsafe_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:262: 262 -> 306
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN68FailsafeTest_no_immediate_takeover_when_failsafe_on_mode_switch_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:308: 308 -> 331
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN23FailsafeTest_defer_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:333: 333 -> 443
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_defer_and_clear_TestD2Ev at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:445: 483 -> 445
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_defer_and_clear_TestD0Ev at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:445: 483 -> 445
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN33FailsafeTest_defer_and_clear_TestC2Ev at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:445: 483 -> 445
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN31FailsafeTest_skip_failsafe_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:485: 485 -> 506
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN34FailsafeTest_user_termination_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp:508: 508 -> 531
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+Scanning /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff for .gcda files ...
+Found 2 data files in /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff
+Processing /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff/CMakeFiles/Takeoff.dir/Takeoff.cpp.gcda
+Processing /tmp/px4-sqe-upstream-build/src/modules/mc_pos_control/Takeoff/CMakeFiles/unit-Takeoff.dir/TakeoffTest.cpp.gcda
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN31TakeoffTest_Initialization_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/TakeoffTest.cpp:39: 39 -> 43
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN35TakeoffTest_RegularTakeoffRamp_Test8TestBodyEv at /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/TakeoffTest.cpp:45: 45 -> 79
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+Finished .info-file creation
+Combining tracefiles.
+.. found 2 files to aggregate.
+Merging /home/hamzaahmad/PX4-Autopilot/coverage/upstream-baseline-initial.info..1 remaining
+Merging /home/hamzaahmad/PX4-Autopilot/coverage/upstream-baseline-runtime.info..0 remaining
+Writing data to /home/hamzaahmad/PX4-Autopilot/coverage/upstream-baseline-combined.info
+Summary coverage rate:
+  lines......: 55.5% (902 of 1624 lines)
+  functions..: 56.7% (198 of 349 functions)
+  branches...: 29.6% (721 of 2433 branches)
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-printers.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+Excluding /tmp/px4-sqe-upstream-build/events/events_generated.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/events.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/log.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/module_params.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/param.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/drivers/drv_hrt.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/include/containers/List.hpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/circuit_breaker/circuit_breaker.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/hysteresis/hysteresis.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/mathlib/math/Limits.hpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/parameters/param.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/framework.cpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/framework.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/px4_custom_mode.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/Takeoff.cpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/Takeoff.hpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/TakeoffTest.cpp
+Excluding /usr/include/c++/13/bits/basic_string.h
+Excluding /usr/include/c++/13/bits/basic_string.tcc
+Excluding /usr/include/c++/13/bits/char_traits.h
+Excluding /usr/include/c++/13/bits/ios_base.h
+Excluding /usr/include/c++/13/bits/move.h
+Excluding /usr/include/c++/13/bits/new_allocator.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_funcs.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_types.h
+Excluding /usr/include/c++/13/bits/unique_ptr.h
+Excluding /usr/include/c++/13/tuple
+Excluding /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
+Removed 35 files
+Writing data to /home/hamzaahmad/PX4-Autopilot/coverage/failsafe-upstream-baseline.info
+Summary coverage rate:
+  lines......: 0.0% (0 of 431 lines)
+  functions..: 0.0% (0 of 14 functions)
+  branches...: 0.0% (0 of 325 branches)
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-printers.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+Excluding /tmp/px4-sqe-upstream-build/events/events_generated.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/events.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/log.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/module_params.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/platforms/common/include/px4_platform_common/param.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/drivers/drv_hrt.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/include/containers/List.hpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/circuit_breaker/circuit_breaker.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/hysteresis/hysteresis.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/mathlib/math/Limits.hpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/lib/parameters/param.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe.cpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/failsafe_test.cpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/framework.cpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/failsafe/framework.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/commander/px4_custom_mode.h
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/Takeoff.hpp
+Excluding /tmp/px4-sqe-upstream-d6f12ad/src/modules/mc_pos_control/Takeoff/TakeoffTest.cpp
+Excluding /usr/include/c++/13/bits/basic_string.h
+Excluding /usr/include/c++/13/bits/basic_string.tcc
+Excluding /usr/include/c++/13/bits/char_traits.h
+Excluding /usr/include/c++/13/bits/ios_base.h
+Excluding /usr/include/c++/13/bits/move.h
+Excluding /usr/include/c++/13/bits/new_allocator.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_funcs.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_types.h
+Excluding /usr/include/c++/13/bits/unique_ptr.h
+Excluding /usr/include/c++/13/tuple
+Excluding /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
+Removed 35 files
+Writing data to /home/hamzaahmad/PX4-Autopilot/coverage/takeoff-upstream-baseline.info
+Summary coverage rate:
+  lines......: 85.7% (36 of 42 lines)
+  functions..: 100.0% (3 of 3 functions)
+  branches...: 76.7% (23 of 30 branches)

@@ -1,0 +1,9 @@
+Found 1 entries.
+Found common filename prefix "/home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control"
+Generating output.
+Processing file Takeoff/Takeoff.cpp
+  lines=42 hit=40 functions=3 hit=3 branches=30 hit=29
+Overall coverage rate:
+  lines......: 95.2% (40 of 42 lines)
+  functions......: 100.0% (3 of 3 functions)
+  branches......: 96.7% (29 of 30 branches)

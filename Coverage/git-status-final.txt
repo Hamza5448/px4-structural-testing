@@ -1,0 +1,5 @@
+M  src/modules/commander/failsafe/CMakeLists.txt
+AM src/modules/commander/failsafe/FailsafeStructuralTest.cpp
+M  src/modules/mc_pos_control/Takeoff/CMakeLists.txt
+A  src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+?? SQE_Assignment_2_PX4_Structural_Tests.patch

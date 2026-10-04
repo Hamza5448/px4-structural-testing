@@ -1,0 +1,111 @@
+ERROR [px4_work_queue] not running
+ERROR [px4_work_queue] wq:lp_default not available
+ERROR [px4_work_queue] init failed
+[==========] Running 13 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 5 tests from FailsafeStructuralTest
+[ RUN      ] FailsafeStructuralTest.FS_MCDC_01_DisabledManualControl
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+MC/DC runtime: initial=Hold settled=RTL
+[       OK ] FailsafeStructuralTest.FS_MCDC_01_DisabledManualControl (0 ms)
+[ RUN      ] FailsafeStructuralTest.FS_MCDC_02_NoManualControlException
+MC/DC runtime: initial=None settled=None
+[       OK ] FailsafeStructuralTest.FS_MCDC_02_NoManualControlException (0 ms)
+[ RUN      ] FailsafeStructuralTest.FS_MCDC_03_MissionManualControlException
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+MC/DC runtime: initial=Hold settled=RTL
+[       OK ] FailsafeStructuralTest.FS_MCDC_03_MissionManualControlException (0 ms)
+[ RUN      ] FailsafeStructuralTest.FS_MCDC_04_EnabledDatalinkHold
+WARN  [failsafe] Failsafe activated	
+MC/DC runtime: initial=Hold settled=Hold
+[       OK ] FailsafeStructuralTest.FS_MCDC_04_EnabledDatalinkHold (0 ms)
+[ RUN      ] FailsafeStructuralTest.FS_MCDC_05_UnfinishedMission
+MC/DC runtime: initial=None settled=None
+[       OK ] FailsafeStructuralTest.FS_MCDC_05_UnfinishedMission (0 ms)
+[----------] 5 tests from FailsafeStructuralTest (2 ms total)
+
+[----------] 8 tests from FailsafeSafetyScenarioTest
+[ RUN      ] FailsafeSafetyScenarioTest.ManualAndGcsLossPolicies
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.ManualAndGcsLossPolicies (0 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.QuadchuteAndModeDependentNavigation
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.QuadchuteAndModeDependentNavigation (0 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.BatteryEscalationAndArmingBaseline
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.BatteryEscalationAndArmingBaseline (0 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.CriticalFailureTimingAndCircuitBreaker
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.CriticalFailureTimingAndCircuitBreaker (0 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.SpoolupHealthAndOptionalManualControl
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.SpoolupHealthAndOptionalManualControl (0 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.IndependentFlightSafetyPolicies
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.IndependentFlightSafetyPolicies (0 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.LinkLossExceptionsAndVtolTransition
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.LinkLossExceptionsAndVtolTransition (1 ms)
+[ RUN      ] FailsafeSafetyScenarioTest.ExternalModesManualControlException
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+WARN  [failsafe] Failsafe activated: entering Hold for 5 seconds	
+WARN  [failsafe] Failsafe activated	
+[       OK ] FailsafeSafetyScenarioTest.ExternalModesManualControlException (1 ms)
+[----------] 8 tests from FailsafeSafetyScenarioTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 2 test suites ran. (8 ms total)
+[  PASSED  ] 13 tests.

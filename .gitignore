@@ -1,0 +1,18 @@
+# Build/generated compiler files
+build/
+*.gcda
+*.gcno
+*.o
+
+# Archives
+*.zip
+
+# Editor/system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc

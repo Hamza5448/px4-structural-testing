@@ -1,0 +1,50 @@
+Deleting all .da files in /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test and subdirectories
+Done.
+Capturing coverage data from /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/mc_pos_control/Takeoff
+geninfo cmd: '/usr/bin/geninfo /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/mc_pos_control/Takeoff --output-filename /home/hamzaahmad/PX4-Autopilot/coverage/takeoff-student-verified-final.info --gcov-tool gcov --base-directory /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test --ignore-errors mismatch --memory 0 --branch-coverage'
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datf9Mq
+Scanning /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/mc_pos_control/Takeoff for .gcda files ...
+Found 2 data files in /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/mc_pos_control/Takeoff
+Processing /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/mc_pos_control/Takeoff/CMakeFiles/Takeoff.dir/Takeoff.cpp.gcda
+geninfo: WARNING: using JSON module "JSON::PP" - which is much slower than some alternatives.  Consider installing one of JSON::XS or Cpanel::JSON::XS
+Processing /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/src/modules/mc_pos_control/Takeoff/CMakeFiles/unit-TakeoffStructural.dir/TakeoffStructuralTest.cpp.gcda
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN60TakeoffStructuralTest_SkipTakeoffOverrideAndDisarmReset_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp:36: 36 -> 51
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN62TakeoffStructuralTest_LandingTransitionsFlightBackToReady_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp:53: 53 -> 68
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN51TakeoffStructuralBoundaryTest_RampTimeBoundary_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp:70: 70 -> 104
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN60TakeoffStructuralBoundaryTest_InitialRampGainLowerBound_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp:106: 106 -> 135
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+geninfo: WARNING: ('mismatch') mismatched end line for _ZN70TakeoffStructuralLifecycleTest_SpoolupWaitAndNormalRampCompletion_Test8TestBodyEv at /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp:137: 137 -> 185
+	(use "geninfo --ignore-errors mismatch,mismatch ..." to suppress this warning)
+Finished .info-file creation
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-message.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest-printers.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/gtest.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+Excluding /home/hamzaahmad/PX4-Autopilot/build/px4_sitl_test/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/drivers/drv_hrt.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/lib/hysteresis/hysteresis.h
+Excluding /home/hamzaahmad/PX4-Autopilot/src/lib/mathlib/math/Limits.hpp
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/Takeoff.hpp
+Excluding /home/hamzaahmad/PX4-Autopilot/src/modules/mc_pos_control/Takeoff/TakeoffStructuralTest.cpp
+Excluding /usr/include/c++/13/bits/allocator.h
+Excluding /usr/include/c++/13/bits/basic_string.h
+Excluding /usr/include/c++/13/bits/basic_string.tcc
+Excluding /usr/include/c++/13/bits/char_traits.h
+Excluding /usr/include/c++/13/bits/move.h
+Excluding /usr/include/c++/13/bits/new_allocator.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_funcs.h
+Excluding /usr/include/c++/13/bits/stl_iterator_base_types.h
+Excluding /usr/include/c++/13/bits/unique_ptr.h
+Excluding /usr/include/c++/13/tuple
+Excluding /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
+Removed 22 files
+Writing data to /home/hamzaahmad/PX4-Autopilot/coverage/takeoff-production-student-verified-final.info
+Summary coverage rate:
+  lines......: 95.2% (40 of 42 lines)
+  functions..: 100.0% (3 of 3 functions)
+  branches...: 96.7% (29 of 30 branches)

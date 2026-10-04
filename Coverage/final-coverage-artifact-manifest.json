@@ -1,0 +1,182 @@
+[
+  {
+    "file": "coverage/failsafe-upstream-baseline.info",
+    "bytes": 10445,
+    "sha256": "ca5c58aa87e1d0aee53e870707321c00cd33c6a99de98dc8210d2d7a244886da"
+  },
+  {
+    "file": "coverage/takeoff-upstream-baseline.info",
+    "bytes": 1243,
+    "sha256": "0d598d38640e397669d1f6f0def6c3db9c4c990a59af8c06a321db85cb688002"
+  },
+  {
+    "file": "coverage/failsafe-selected-scope-baseline.json",
+    "bytes": 43699,
+    "sha256": "a8cf3dabfd06571794358e6c37bd62677498252a92a37deead058efd2d29a2fa"
+  },
+  {
+    "file": "coverage/takeoff-upstream-baseline.json",
+    "bytes": 1325,
+    "sha256": "146cfd791940823022e78da846a5ebf9a52927b73c90fa7cc03dfa45f88bf8b0"
+  },
+  {
+    "file": "coverage/failsafe-student-verified-final.info",
+    "bytes": 126765,
+    "sha256": "529377a4d6956f9c6386656df9aa0bab76372ec8004750b5494a1cfed6ca18a3"
+  },
+  {
+    "file": "coverage/failsafe-production-student-verified-final.info",
+    "bytes": 11123,
+    "sha256": "b1fb7d80b823f27463e538154a9eb912cdb4c25c3ffa765e729ea4cef46499d0"
+  },
+  {
+    "file": "coverage/takeoff-student-verified-final.info",
+    "bytes": 32629,
+    "sha256": "a64ffb307c353309a2ebe3fe86c3b4dbc033b8cbecc0b993a1060cdab3c27174"
+  },
+  {
+    "file": "coverage/takeoff-production-student-verified-final.info",
+    "bytes": 1254,
+    "sha256": "8b2b72aec20322fe7caa7c4e569b51082120ffab907c0361bf25a649a74c937b"
+  },
+  {
+    "file": "coverage/failsafe-selected-scope-verified-final.json",
+    "bytes": 10859,
+    "sha256": "13db88182d8c52c917f908d806210a28ee1a807db7c3636aaa28ca51b41c3e83"
+  },
+  {
+    "file": "coverage/takeoff-student-verified-final.json",
+    "bytes": 892,
+    "sha256": "608a686272c22dd980fd6cbdbaa9767f20b346e5793baa14f1934a41a6caec73"
+  },
+  {
+    "file": "coverage/failsafe-selected-scope-gaps-verified-final.json",
+    "bytes": 7203,
+    "sha256": "cb8439c7e9cc776f764a4bf4edeaa6c1aa1ca38df7ee904e15052d6a76fb7be6"
+  },
+  {
+    "file": "coverage/takeoff-selected-gaps-verified-final.json",
+    "bytes": 374,
+    "sha256": "a762b7804c351a9c7df97646509de2b271b9f3f9e1534a3436c264a24fa50239"
+  },
+  {
+    "file": "coverage/upstream-to-student-final-comparison.json",
+    "bytes": 23565,
+    "sha256": "960a85388a021c27bd65e8720cde9324748d006b0a4c0df9024d49d5e8682df2"
+  },
+  {
+    "file": "coverage/final-coverage-provenance.json",
+    "bytes": 2883,
+    "sha256": "dd01d3647822a21edce2f317dd098d1e8f151a39951578f0ff8794c3ce4e48a7"
+  },
+  {
+    "file": "coverage/final-test-traceability.txt",
+    "bytes": 8938,
+    "sha256": "cd18cafae94f2d8d3e868ae5e968e8d1efa8976d630c5279340a8ba7aebc13c7"
+  },
+  {
+    "file": "coverage/failsafe-throw-branch-audit.txt",
+    "bytes": 1791,
+    "sha256": "3681dd1ae84859ac7e69c561356755587e050d25a69d7affe2ff1a674d6a19ef"
+  },
+  {
+    "file": "coverage/upstream-baseline-initial.info",
+    "bytes": 109330,
+    "sha256": "7ab1cada09e1728bc443cbc224eb44064a6c66df3feecf8a70c0cfb93a9fc9eb"
+  },
+  {
+    "file": "coverage/upstream-baseline-runtime.info",
+    "bytes": 90182,
+    "sha256": "9c2914ac8351f2ad52da82b214cd60c59b1bd68d2aa29d8594428ced43d9b33a"
+  },
+  {
+    "file": "coverage/upstream-baseline-combined.info",
+    "bytes": 109720,
+    "sha256": "2869b30db332ab35ab1a17b893ad04ff8ac3252fe53d3f1a0d064cdca14cdd15"
+  },
+  {
+    "file": "coverage/upstream-baseline-tests.log",
+    "bytes": 4075,
+    "sha256": "1ccb707f91e178841e2d01140c68e8d41a1b6f62ea16b7df8d20f2cd813a3813"
+  },
+  {
+    "file": "coverage/upstream-baseline-coverage.log",
+    "bytes": 17107,
+    "sha256": "2c7d0b177677898c1a5ac76b23b229744c19939a122a8489a1de0a9d32895591"
+  },
+  {
+    "file": "coverage/upstream-baseline-final-status.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "coverage/failsafe-student-verified-tests.log",
+    "bytes": 6048,
+    "sha256": "89f7980c8e520e07244e7628590195db87dc7b350fca18992cf365f165bd6e40"
+  },
+  {
+    "file": "coverage/failsafe-student-verified-coverage.log",
+    "bytes": 11504,
+    "sha256": "2fc593aac93486a12e390e3fd186d809d2ee6ce1c8cea14b3c169753199e47d7"
+  },
+  {
+    "file": "coverage/takeoff-student-verified-tests.log",
+    "bytes": 1314,
+    "sha256": "04df4d716669cd7856bdd4c3f2b538e8edfc24797d8e9c453adef88faa81a290"
+  },
+  {
+    "file": "coverage/takeoff-student-verified-coverage.log",
+    "bytes": 4888,
+    "sha256": "2e47ac356f39abe3178fb7f1cb1ad65c8e0bd9ca9e91a6398469696ba07b8820"
+  },
+  {
+    "file": "coverage/failsafe-baseline-metrics.log",
+    "bytes": 43699,
+    "sha256": "a8cf3dabfd06571794358e6c37bd62677498252a92a37deead058efd2d29a2fa"
+  },
+  {
+    "file": "coverage/takeoff-baseline-metrics.log",
+    "bytes": 1325,
+    "sha256": "146cfd791940823022e78da846a5ebf9a52927b73c90fa7cc03dfa45f88bf8b0"
+  },
+  {
+    "file": "coverage/failsafe-verified-final-metrics.log",
+    "bytes": 10859,
+    "sha256": "13db88182d8c52c917f908d806210a28ee1a807db7c3636aaa28ca51b41c3e83"
+  },
+  {
+    "file": "coverage/takeoff-verified-final-metrics.log",
+    "bytes": 892,
+    "sha256": "608a686272c22dd980fd6cbdbaa9767f20b346e5793baa14f1934a41a6caec73"
+  },
+  {
+    "file": "coverage/reproduce-upstream-and-student-coverage.sh",
+    "bytes": 4137,
+    "sha256": "302b9e93ec8690bd5a1fd6e50f410b8dfc0b688462f1501580d09668bc838857"
+  },
+  {
+    "file": "coverage/failsafe_scope_metrics.py",
+    "bytes": 2158,
+    "sha256": "72923443c24721b40301d9d770adc0775012f7941d2708db70b113bea3e5c809"
+  },
+  {
+    "file": "coverage/full-make-tests-final.log",
+    "bytes": 35047,
+    "sha256": "2a6ec6ad7313cd4c228212806f565cfac60dad36373f1cd0261ef8529ea64dd6"
+  },
+  {
+    "file": "coverage/full-make-tests-final.json",
+    "bytes": 394,
+    "sha256": "b4f26323f98f3d4625166996cd29b0aed8c6605e25f2d1b3cd1830c9fc0971e7"
+  },
+  {
+    "file": "coverage/production-code-diff-final.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "coverage/git-status-final.txt",
+    "bytes": 274,
+    "sha256": "46294c60d6297771aebfbf3ee0e8577a6d83420debee555907972398da76e36e"
+  }
+]

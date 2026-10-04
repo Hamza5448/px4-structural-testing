@@ -1,0 +1,81 @@
+{
+  "input": "/home/hamzaahmad/PX4-Autopilot/coverage/takeoff-upstream-baseline.info",
+  "whole": {
+    "lines_total": 42,
+    "lines_hit": 36,
+    "line_percent": 85.71428571428571,
+    "branches_total": 30,
+    "branches_numeric": 30,
+    "branches_dash": 0,
+    "branches_hit": 23,
+    "branch_percent": 76.66666666666667,
+    "numeric_only_branch_percent": 76.66666666666667,
+    "zero_lines": [
+      93,
+      98,
+      99,
+      103,
+      117,
+      125
+    ],
+    "zero_branches": [
+      [
+        53,
+        "0",
+        "4",
+        "0"
+      ],
+      [
+        53,
+        "0",
+        "5",
+        "0"
+      ],
+      [
+        92,
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        102,
+        "0",
+        "2",
+        "0"
+      ],
+      [
+        116,
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        120,
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        121,
+        "0",
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "selected": {
+    "lines_total": 0,
+    "lines_hit": 0,
+    "line_percent": null,
+    "branches_total": 0,
+    "branches_numeric": 0,
+    "branches_dash": 0,
+    "branches_hit": 0,
+    "branch_percent": null,
+    "numeric_only_branch_percent": null,
+    "zero_lines": [],
+    "zero_branches": []
+  },
+  "functions_total": 3,
+  "functions_hit": 3
+}

@@ -1,0 +1,24 @@
+[==========] Running 5 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from TakeoffStructuralTest
+[ RUN      ] TakeoffStructuralTest.SkipTakeoffOverrideAndDisarmReset
+[       OK ] TakeoffStructuralTest.SkipTakeoffOverrideAndDisarmReset (1 ms)
+[ RUN      ] TakeoffStructuralTest.LandingTransitionsFlightBackToReady
+[       OK ] TakeoffStructuralTest.LandingTransitionsFlightBackToReady (0 ms)
+[----------] 2 tests from TakeoffStructuralTest (1 ms total)
+
+[----------] 2 tests from TakeoffStructuralBoundaryTest
+[ RUN      ] TakeoffStructuralBoundaryTest.RampTimeBoundary
+[       OK ] TakeoffStructuralBoundaryTest.RampTimeBoundary (0 ms)
+[ RUN      ] TakeoffStructuralBoundaryTest.InitialRampGainLowerBound
+[       OK ] TakeoffStructuralBoundaryTest.InitialRampGainLowerBound (0 ms)
+[----------] 2 tests from TakeoffStructuralBoundaryTest (1 ms total)
+
+[----------] 1 test from TakeoffStructuralLifecycleTest
+[ RUN      ] TakeoffStructuralLifecycleTest.SpoolupWaitAndNormalRampCompletion
+[       OK ] TakeoffStructuralLifecycleTest.SpoolupWaitAndNormalRampCompletion (0 ms)
+[----------] 1 test from TakeoffStructuralLifecycleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 3 test suites ran. (4 ms total)
+[  PASSED  ] 5 tests.

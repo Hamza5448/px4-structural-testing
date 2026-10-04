@@ -1,0 +1,202 @@
+[
+  {
+    "line": 494,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 516,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 525,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 530,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 538,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 542,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 544,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 549,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 554,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 558,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 562,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 565,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 571,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 574,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 585,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 591,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 597,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 611,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 614,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 623,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 626,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 629,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 632,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 633,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  },
+  {
+    "line": 639,
+    "block": "e0",
+    "branch": "1",
+    "taken": "0",
+    "classification": 4,
+    "reason": "Compiler exception/throw instrumentation: BRDA e0 record; corresponding gcov source line contains a (throw) branch. No ordinary source-level decision remains unhit."
+  }
+]

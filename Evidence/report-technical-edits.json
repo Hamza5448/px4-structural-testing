@@ -1,0 +1,226 @@
+[
+  {
+    "before": "Seventeen student-authored tests were implemented: five unit tests for TakeoffHandling and twelve functional tests for Failsafe. The Takeoff suite achieved 95.2% executable-line coverage (40/42), 96.7% branch coverage (29/30), and 100% function coverage (3/3). For the selected Failsafe scope, lines 445-642 of checkStateAndMode(), coverage improved from 81.9% to 100.0% for executable lines and from 49.1% to 85.3% for instrumented branches. A five-case MC/DC suite demonstrated independent effect for four atomic conditions in a mission-control-loss decision. The complete PX4 test suite subsequently passed 149/149 tests with zero failures. No production source code was modified.",
+    "after": "Eighteen student-authored tests were implemented: five unit tests for TakeoffHandling and thirteen functional tests for Failsafe. The Takeoff suite achieved 95.2% executable-line coverage (40/42), 96.7% branch coverage (29/30), and 100% function coverage (3/3), compared with an authentic upstream baseline of 85.7% lines (36/42), 76.7% branches (23/30), and 100% functions (3/3). For the selected Failsafe scope, lines 445-642 of checkStateAndMode(), the authentic upstream baseline was 0/116 executable lines and 0/218 branches. The student suite achieved 116/116 lines (100%) and 193/218 branches (88.5%). A five-case MC/DC suite demonstrated independent effect for four atomic conditions in a mission-control-loss decision. The complete PX4 test suite subsequently passed 149/149 tests with zero failures. No production source code was modified."
+  },
+  {
+    "before": "The unmodified baseline was built successfully with `make px4_sitl`. The baseline test suite was then executed with `make tests`; all 147 discovered tests passed with zero failures. The reported baseline test time was 81.20 seconds. These upstream tests establish a clean starting point but are not counted as student-authored tests.",
+    "after": "The unmodified baseline was built successfully with `make px4_sitl`. The baseline test suite was then executed with `make tests`; all 147 discovered tests passed with zero failures. The reported baseline test time was 81.20 seconds. These upstream tests establish a clean starting point but are not counted as student-authored tests. Authentic coverage baselines were subsequently collected in a separate clean worktree at the exact commit, using only the relevant upstream targets unit-Takeoff and functional-failsafe_test. Both passed. Initial zero coverage was merged with runtime coverage to retain compiled-but-unexecuted production code. The upstream Failsafe tests use a test-specific FailsafeBase implementation and therefore do not execute the real checkStateAndMode() scope."
+  },
+  {
+    "before": "The independence pairs are 01/02 for A, 02/03 for B, 03/04 for C, and 03/05 for M. This demonstrates independent effect without exhaustively enumerating all sixteen Boolean combinations. For the C pair, Q is structurally false in FS-MCDC-04, but the externally observed final action can still be RTL because the ordinary GCS-loss policy independently requests RTL. Therefore the C-pair conclusion is supported by structural branch evidence rather than by treating the final selected action as a unique oracle.",
+    "after": "The independence pairs are 01/02 for A, 02/03 for B, 03/04 for C, and 03/05 for M. This demonstrates independent effect without exhaustively enumerating all sixteen Boolean combinations. FS-MCDC-03 and FS-MCDC-04 differ only in C: row 03 uses NAV_DLL_ACT=0 and settles to RTL; row 04 uses NAV_DLL_ACT=1 and settles to Hold through the ordinary GCS-loss policy. RTL versus Hold gives an observable settled-action distinction for C. The ordinary GCS-loss path remains active in row 04 and is included in the interpretation."
+  },
+  {
+    "before": "Twelve functional tests were used. Five implement the MC/DC matrix above. Seven additional scenarios exercise meaningful policy behavior that remained under-covered after the MC/DC pass: manual-control loss, ordinary GCS/datalink loss, VTOL/quadchute failure policy, low-position-accuracy behavior, navigator failure, battery-warning severity handling, and post-spool-up critical-failure termination. The tests use controlled PX4 parameters, vehicle state/status flags, and simulated time to keep execution deterministic.",
+    "after": "Thirteen functional tests were used. Five implement the MC/DC matrix above. Eight additional scenario tests exercise manual-control and ordinary GCS-loss policies, quadchute and mode-dependent navigation, battery escalation and arming baselines, critical-failure timing and the termination breaker, spoolup health and optional manual control, independent flight-safety policies, link-loss exceptions and VTOL transitions, and EXTERNAL1 through EXTERNAL8 with the external RC-loss exception enabled and disabled. The tests use controlled PX4 parameters, vehicle state/status flags, and simulated time to keep execution deterministic."
+  },
+  {
+    "before": "The final student-authored suite contains 17 GTests across two PX4 test executables: five Takeoff tests and twelve Failsafe tests. Both targets passed in isolated execution before the final full regression.",
+    "after": "The final student-authored suite contains 18 GTests across two PX4 test executables: five Takeoff tests and thirteen Failsafe tests. Both targets passed in isolated execution before the final full regression. Each workbook inventory row corresponds to one actual TEST or TEST_F definition; the authoritative mapping is Coverage/final-test-traceability.txt."
+  },
+  {
+    "before": "After integrating both structural targets, the complete PX4 test suite was executed again with `make tests`. The suite contained 149 tests: the original 147 plus the two newly registered student test executables. All 149 tests passed with zero failures. The reported final test time was 622.89 seconds. This provides regression evidence that the added test targets integrate with the existing test configuration without breaking the baseline suite.",
+    "after": "After integrating both structural targets, the complete PX4 test suite was executed again with `make tests`. The suite contained 149 tests: the original 147 plus the two newly registered student test executables. All 149 tests passed with zero failures. The latest verified final test time was 636.67 seconds. Coverage/full-make-tests-final.log and Coverage/full-make-tests-final.json retain the authoritative final result. This provides regression evidence that the added test targets integrate with the existing test configuration without breaking the baseline suite."
+  },
+  {
+    "before": "Coverage was collected from isolated student-test execution so that the reported improvements are attributable to the student-authored suites rather than to unrelated upstream tests. The Failsafe selected-scope metric uses lines 445-642 inclusive. For branch coverage, all LCOV BRDA records in the range are included in the denominator.",
+    "after": "Authentic upstream baseline coverage was collected in a separate clean worktree at the exact commit, without student test sources or registrations. Final coverage was collected from isolated student-test execution after separate counter resets for each target, so the reported results are attributable to the student-authored suites. The Failsafe selected-scope metric uses lines 445-642 inclusive. For branch coverage, all LCOV BRDA records in the range are included in the denominator: the upstream baseline has 218 '-' records; the final capture has 218 numeric records, of which 193 have positive counts. The earlier 95/116-line and 107/218-branch measurements described an intermediate student suite, not an upstream baseline, and are not used for the final baseline comparison."
+  },
+  {
+    "before": "The final selected scope has no uncovered executable lines. Thirty-two branch records remain unhit. Seven are alternative EXTERNAL-mode predicates (EXTERNAL2 through EXTERNAL8 and the associated chain outcome) that share the same external-mode exception policy already exercised through EXTERNAL1 with exceptions both enabled and disabled. The remaining 25 records are `e0` compiler/instrumentation exception edges; inspection against gcov showed zero-count `(throw)` markers rather than ordinary source-level policy alternatives. These gaps are therefore reported rather than hidden or labeled generically as infeasible.",
+    "after": "The final selected scope has no uncovered executable lines. EXTERNAL1 through EXTERNAL8 are now covered with the relevant exception enabled and disabled. The only remaining 25 branch records are e0 compiler exception/throw instrumentation edges; gcov inspection confirms their (throw) branch kind. No ordinary substantive selected-scope decision branch remains uncovered. Exact records and classification are retained in Coverage/failsafe-selected-scope-gaps-verified-final.json and Coverage/failsafe-throw-branch-audit.txt."
+  },
+  {
+    "before": "Final Git inspection showed only four assignment files: two CMake registrations and the two student-authored test sources. A targeted diff of Takeoff and Failsafe production files was empty. Unrelated EKF test-data changes, a downloaded toolchain archive, and a temporary backup were removed/restored before submission packaging.",
+    "after": "Final Git inspection confirmed an empty diff for the six selected production implementation files. The source patch contains only the two student-authored test sources and their two CMake registrations, and git apply --check passed against the clean exact-commit baseline worktree. The full regression regenerated two tracked EKF reference CSVs; their known-clean pre-run contents were restored. Coverage artifacts, documentation, workbook files, logs, and unrelated files are excluded from the source patch."
+  },
+  {
+    "before": "Coverage evidence files retained during analysis included the isolated LCOV `.info` files, selected-scope JSON metrics/gap records, and the metric script used to reproduce the Failsafe range calculation.",
+    "after": "The retained evidence includes authentic upstream baseline LCOV files, verified isolated student-final LCOV files, selected-scope JSON metrics and gap records, test/regression logs, provenance, and reproduction scripts. HTML reports generated from the verified final .info files are available under Coverage/html/takeoff-final/ and Coverage/html/failsafe-final/. The Failsafe HTML reports whole-file coverage; the selected lines 445-642 metrics are reported separately in JSON. No tests were rerun to generate HTML."
+  },
+  {
+    "before": "The evidence supports a strong but deliberately scoped conclusion about the two production areas examined. TakeoffHandling proved highly amenable to isolated unit-level structural testing because its public interface allows legitimate state transitions, timing configuration, and ramp outputs to be controlled without modifying production code. Five focused tests exercised the normal takeoff lifecycle, landing/re-entry behavior, the skip-takeoff override, disarm reset, ramp thresholds, and minimum-gain behavior. The resulting 95.2% executable-line and 96.7% branch coverage is considered practically complete for the public production behavior. The residual default switch arm represents an invalid internal enum state and was not forced solely to increase the percentage.\n\nThe Failsafe study provides broader safety-policy evidence. The final twelve-test functional suite exercised the real Failsafe implementation through its framework path and raised coverage of the selected checkStateAndMode() scope from 81.9% to 100% for executable lines and from 49.1% to 85.3% for branches. The five-case MC/DC design demonstrated independent effect for all four atomic conditions in the selected mission-control-loss decision. One important oracle limitation was retained rather than hidden: changing condition C can make the selected compound decision false while the ordinary GCS-loss path still produces RTL. Structural branch evidence is therefore necessary to establish that independence pair.\n\nThe remaining Failsafe branch gaps were investigated individually. They consist of equivalent external-mode predicates and compiler/instrumentation exception edges rather than uncovered executable statements. The final 149/149 regression result further shows that the student test integration did not introduce observed regressions in the existing PX4 test suite. These results increase confidence in the tested Takeoff and Failsafe behaviors, but they do not justify a claim that PX4 as a whole is defect-free or comprehensively verified. Untested modules, hardware-dependent behavior, SITL/HIL interactions, concurrency, and environment-specific failures remain outside the scope of this assignment.",
+    "after": "The evidence supports a strong but deliberately scoped conclusion about the two production areas examined. TakeoffHandling proved highly amenable to isolated unit-level structural testing because its public interface allows legitimate state transitions, timing configuration, and ramp outputs to be controlled without modifying production code. Five focused tests exercised the normal takeoff lifecycle, landing/re-entry behavior, the skip-takeoff override, disarm reset, ramp thresholds, and minimum-gain behavior. The resulting 95.2% executable-line and 96.7% branch coverage is considered practically complete for the public production behavior. The residual default switch arm represents an invalid internal enum state and was not forced solely to increase the percentage.\n\nThe Failsafe study provides broader safety-policy evidence. The final thirteen-test functional suite exercised the real Failsafe implementation through its framework path and raised coverage of the selected checkStateAndMode() scope from an authentic upstream baseline of 0/116 lines and 0/218 branches to 116/116 lines (100%) and 193/218 branches (88.5%). The five-case MC/DC design demonstrated independent effect for all four atomic conditions in the selected mission-control-loss decision. For condition C, FS-MCDC-03 and FS-MCDC-04 differ only in C and settle to RTL and Hold respectively. NAV_DLL_ACT=1 in row 04 preserves ordinary GCS-loss handling while making C observably independent.\n\nThe remaining Failsafe branch gaps were investigated individually. All eight external-mode predicates are covered. Only 25 compiler exception/throw instrumentation records remain unhit; no ordinary substantive selected-scope decision branch remains uncovered. The final 149/149 regression result further shows that the student test integration did not introduce observed regressions in the existing PX4 test suite. These results increase confidence in the tested Takeoff and Failsafe behaviors, but they do not justify a claim that PX4 as a whole is defect-free or comprehensively verified. Untested modules, hardware-dependent behavior, SITL/HIL interactions, concurrency, and environment-specific failures remain outside the scope of this assignment."
+  },
+  {
+    "before": "ID range",
+    "after": "Actual GoogleTest(s)"
+  },
+  {
+    "before": "FS-MCDC-01..05",
+    "after": "FailsafeStructuralTest.FS_MCDC_01..05"
+  },
+  {
+    "before": "Five-case MC/DC suite for Q = (A OR B) AND C AND M",
+    "after": "Five actual MC/DC cases for Q = (A OR B) AND C AND M. Row 04 uses EnabledDatalinkHold."
+  },
+  {
+    "before": "PASS",
+    "after": "5/5 PASS"
+  },
+  {
+    "before": "FS-06",
+    "after": "FailsafeSafetyScenarioTest.ManualAndGcsLossPolicies"
+  },
+  {
+    "before": "Manual-control-loss production policy",
+    "after": "Manual-control Land and independent ordinary GCS-loss RTL policies."
+  },
+  {
+    "before": "FS-07",
+    "after": "FailsafeSafetyScenarioTest.QuadchuteAndModeDependentNavigation"
+  },
+  {
+    "before": "Ordinary GCS/datalink-loss policy",
+    "after": "Quadchute RTL, position-accuracy Hold, navigator Land/Hold by mode."
+  },
+  {
+    "before": "FS-08",
+    "after": "FailsafeSafetyScenarioTest.BatteryEscalationAndArmingBaseline"
+  },
+  {
+    "before": "VTOL/quadchute safety policy",
+    "after": "LOW/CRITICAL/EMERGENCY escalation and low battery at arming."
+  },
+  {
+    "before": "FS-09",
+    "after": "FailsafeSafetyScenarioTest.CriticalFailureTimingAndCircuitBreaker"
+  },
+  {
+    "before": "Low-position-accuracy policy",
+    "after": "Early Disarm, late latched Terminate, breaker-enabled Warn."
+  },
+  {
+    "before": "FS-10",
+    "after": "FailsafeSafetyScenarioTest.SpoolupHealthAndOptionalManualControl"
+  },
+  {
+    "before": "Navigator-failure policy",
+    "after": "Armed lifecycle, spoolup health failures, optional RC regain/loss."
+  },
+  {
+    "before": "FS-11",
+    "after": "FailsafeSafetyScenarioTest.IndependentFlightSafetyPolicies"
+  },
+  {
+    "before": "Battery-warning severity policy",
+    "after": "Isolated wind, time, geofence, remaining-time, motor, propeller and mission failures."
+  },
+  {
+    "before": "FS-12",
+    "after": "FailsafeSafetyScenarioTest.LinkLossExceptionsAndVtolTransition"
+  },
+  {
+    "before": "Post-spool-up critical-failure termination",
+    "after": "Enabled/disabled link-loss exceptions and forward-flight VTOL suppression."
+  },
+  {
+    "before": "FS-12",
+    "after": "FailsafeSafetyScenarioTest.ExternalModesManualControlException"
+  },
+  {
+    "before": "Post-spool-up critical-failure termination",
+    "after": "EXTERNAL1-EXTERNAL8: exception enabled -> None; disabled -> RTL."
+  },
+  {
+    "before": "Final result",
+    "after": "Authentic upstream baseline"
+  },
+  {
+    "before": "Final result",
+    "after": "Student final"
+  },
+  {
+    "before": "40/42 = 95.2%",
+    "after": "36/42 = 85.7%"
+  },
+  {
+    "before": "29/30 = 96.7%",
+    "after": "23/30 = 76.7%"
+  },
+  {
+    "before": "Before expansion",
+    "after": "Authentic upstream baseline"
+  },
+  {
+    "before": "Final",
+    "after": "Student final"
+  },
+  {
+    "before": "181/431 (42.0%)",
+    "after": "0/431 (0%)"
+  },
+  {
+    "before": "255/431 (59.2%)",
+    "after": "259/431 (60.1%)"
+  },
+  {
+    "before": "+17.2 pp",
+    "after": "+60.1 pp"
+  },
+  {
+    "before": "12/14 (85.7%)",
+    "after": "0/14 (0%)"
+  },
+  {
+    "before": "+7.2 pp",
+    "after": "+92.9 pp"
+  },
+  {
+    "before": "130/325 (40.0%)",
+    "after": "0/325 (0%)"
+  },
+  {
+    "before": "223/325 (68.6%)",
+    "after": "231/325 (71.1%)"
+  },
+  {
+    "before": "+28.6 pp",
+    "after": "+71.1 pp"
+  },
+  {
+    "before": "95/116 (81.9%)",
+    "after": "0/116 (0%)"
+  },
+  {
+    "before": "116/116 (100.0%)",
+    "after": "116/116 (100%)"
+  },
+  {
+    "before": "+18.1 pp",
+    "after": "+100 pp"
+  },
+  {
+    "before": "107/218 (49.1%)",
+    "after": "0/218 (0%)"
+  },
+  {
+    "before": "186/218 (85.3%)",
+    "after": "193/218 (88.5%)"
+  },
+  {
+    "before": "+36.2 pp",
+    "after": "+88.5 pp"
+  },
+  {
+    "before": "PX4 coverage target",
+    "after": "Reproduce isolated baseline/student coverage"
+  },
+  {
+    "before": "make tests_coverage",
+    "after": "bash coverage/reproduce-upstream-and-student-coverage.sh (after preparing the recorded clean baseline build)"
+  },
+  {
+    "before": "python3 coverage/failsafe_scope_metrics.py",
+    "after": "python3 coverage/failsafe_scope_metrics.py --input coverage/failsafe-production-student-verified-final.info --output /tmp/failsafe-metrics.json"
+  },
+  {
+    "before": "Failsafe student execution: 12/12 passed",
+    "after": "Historical 12-case screenshot; final 13/13 execution in Coverage/failsafe-student-verified-tests.log"
+  },
+  {
+    "before": "Failsafe before/after selected-scope coverage",
+    "after": "Authentic upstream baseline and verified final coverage; earlier screenshot retained as historical evidence"
+  }
+]
